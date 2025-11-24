@@ -34,3 +34,37 @@ if (sellingPrice > costPrice) {
   // if they’re exactly equal
   console.log("No profit, no loss")
 }
+
+// selling price (to test the statement)
+console.log("Scenario 1: Sold at a lower price")
+const sellingPrice2 = 125000
+
+// profit / loss
+if (sellingPrice2 > costPrice) {
+  const profit = sellingPrice2 - costPrice
+  console.log("Result: Profit of", profit)
+
+} else if (sellingPrice2 < costPrice) {
+  const loss = costPrice - sellingPrice2
+  console.log("Result: Loss of", loss)
+
+} else {
+  console.log("Result: No profit, no loss")
+}
+
+// selling price (to test the statement)
+console.log("Scenario 2: Sold at the same price as cost")
+const sellingPrice3 = 200000
+
+// profit / loss
+if (sellingPrice3 > costPrice) {
+  const profit = sellingPrice3 - costPrice
+  console.log("Result: Profit of", profit)
+
+} else if (sellingPrice3 < costPrice) {
+  const loss = costPrice - sellingPrice3
+  console.log("Result: Loss of", loss)
+
+} else {
+  console.log("Result: No profit, no loss")
+}
