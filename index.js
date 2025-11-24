@@ -26,13 +26,16 @@ const sellingPrice = 350000
 
 // profit / loss
 if (sellingPrice > costPrice) {
+  // if it was sold higher than the costPrice, there's profit
   const profit = sellingPrice - costPrice
   console.log("Profit:", profit,)
 
 } else if (sellingPrice < costPrice) {
+  // if I sold it lower, there is a loss
   const loss = costPrice - sellingPrice
   console.log("Loss:", loss)
 
 } else {
+  // if they’re exactly equal
   console.log("No profit, no loss")
 }
