@@ -20,3 +20,19 @@ const discountedPrice = costPrice - discountAmount // original - discount = the 
 console.log("Item:", item)
 console.log("Discount Amount:", discountAmount)
 console.log("Price After Discount:", discountedPrice)
+
+// selling price (how much we selling it at)
+const sellingPrice = 350000
+
+// profit / loss
+if (sellingPrice > costPrice) {
+  const profit = sellingPrice - costPrice
+  console.log("Profit:", profit,)
+
+} else if (sellingPrice < costPrice) {
+  const loss = costPrice - sellingPrice
+  console.log("Loss:", loss)
+
+} else {
+  console.log("No profit, no loss")
+}
